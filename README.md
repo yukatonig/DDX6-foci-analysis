@@ -24,7 +24,7 @@ ddx6area <- function(x){
   dazlmask <- remove1 > 0
   area2 <- computeFeatures.shape(dazlmask)[,1]
   display(dazlmask)
-  # Creating the mask of DDX6
+  # Creating the mask of DDX6 or DCP1A
   imgr <- x[, , 2] 
   display(normalize(imgr))
   gaussr <- gblur(imgr, 50, radius=2*ceiling(3*50)+1)
