@@ -60,7 +60,7 @@ ddx6area <- function(x){
 kern <- makeBrush(3, shape="diamond")
 
 ddx6foci <- function(x){
-    #Creating the mask of DAZL
+    # Creating the mask of DAZL
     imgg <- x[, , 1] 
     display(normalize(imgg))
     gauss <- gblur(imgg, 99, radius=2*ceiling(3*99)+1)
@@ -75,7 +75,7 @@ ddx6foci <- function(x){
     remove1 <- rmObjects(label1, d100)
     dazlmask <- remove1 > 0
     display(dazlmask)
-    #Creating the mask of DDX6 foci in oocytes
+    # Creating the mask of DDX6 foci in oocytes
     imgr <- x[, , 2] 
     display(normalize(imgr))
     gaussr <- gblur(imgr, 50, radius=2*ceiling(3*50)+1)
