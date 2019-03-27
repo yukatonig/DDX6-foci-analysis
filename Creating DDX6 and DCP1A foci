@@ -58,6 +58,7 @@ ddx6area <- function(x){
 # channel2: DDX6
 
 kern <- makeBrush(3, shape="diamond")
+rmask <- NULL
 
 ddx6foci <- function(x){
     # Creating the mask of DAZL
